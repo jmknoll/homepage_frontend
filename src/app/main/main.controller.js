@@ -51,7 +51,7 @@
         }
       }
 
-
+/*
       angular.element(window).load(function() {
           $('#landing-page').fullpage(
             {
@@ -93,8 +93,7 @@
               slideSelector: '.slide',
             });
       });
-
-
+*/
      
 
 })();
