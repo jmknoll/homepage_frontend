@@ -1,0 +1,27 @@
+ng-include(src="'app/components/navbar/navbar.html'")
+
+.landing-page#landing-page
+
+	.section.top-section
+		h1.title-text(ng-click='fadeInSubtext()') Jameson Knoll
+		h2.subtitle-text(ng-hide='hideSubtext') Full Stack Web Design and Development
+		.social-icon-container
+			img.social-icon.social-icon-1(ng-hide='hideTwitter', src='assets/images/social_twitter.svg')
+			img.social-icon.social-icon-2(ng-hide='hideLinkedIn', src='assets/images/social_linkedin.svg')
+			img.social-icon.social-icon-3(ng-hide='hideGithub', src='assets/images/social_github.svg')
+	.section.process-section
+		h1 sample content of process section
+
+	.section.blog-section
+		h1 sample content of blog section
+	
+	.section.portfolio-section
+		.slide
+			h1 sample content of portfolio slide 1
+		.slide
+			h1 sample content of portfolio slide 2
+		.slide
+			h1 sample content of portfolio slide 3
+	
+	.section.contact-section
+		h1 sample content of contact section
