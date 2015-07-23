@@ -39,7 +39,7 @@ LANDING PAGE STYLES
 
 	.top-section {
 		background-color: white;
-		background-image: url('/assets/images/cloud1.jpg');
+		background-image: url('/assets/images/homepage_landing_bg_2.jpg');
 		background-size: 100% 110%;
 		background-repeat: no-repeat;	
 
@@ -77,6 +77,21 @@ LANDING PAGE STYLES
 		}
 	}
 
+	.process-section {
+		text-align: left;
+
+		.bio-title {
+			font-size: 1.5em;
+			margin: 20px 20px 20px 0;
+			text-decoration: underline;
+		}
+		
+		.bio-list {
+			list-style: none;
+			padding-left: 0;
+		}
+	}
+
 	.portfolio-section {
 		background-color: blue;
 	}
@@ -85,8 +100,58 @@ LANDING PAGE STYLES
 		background-color: red;
 	}
 
-	.blog-section {
-		background-color: orange;
+	.contact-section {
+		background-color: #4724d6;
+		background-image: url('/assets/images/landing_contact_bg.jpg');
+		background-size: 100% 100%;
+
+		.contact-header-container {
+			margin-top: 30%;
+
+			.contact-header {
+				opacity: 0.8;
+				text-align: center;
+				font-size: 7.0em;
+				text-transform: uppercase;
+				color: white;
+				letter-spacing: 0.085em;
+			}
+
+			.contact-header-offset {
+				margin-left: 100px;
+			}
+		}
+
+		.contact-form {
+			margin-top: 20%;
+
+			.form-control {
+				//background-color: transparent;
+				//color: white;
+			}
+
+			.form-group {
+				color: white;
+				text-align: left;
+				width: 75%;
+				margin: inherit auto;
+
+				label {
+					color: white;
+					text-align: left;
+				}
+
+				input {
+				}
+			}
+
+			button {
+				width: 75%;
+				display: block;
+				margin: inherit auto;
+			}
+			
+		}
 	}
 
 }
