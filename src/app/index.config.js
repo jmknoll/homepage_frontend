@@ -3,8 +3,8 @@
 
   angular
     .module('homepageFrontend')
-    .config(config);
-
+    .config(config)
+    
   /** @ngInject */
   function config($logProvider, toastr) {
     // Enable log

@@ -23,12 +23,24 @@ light blue from sky:
  
 **/
 
-@bodyBeige: #e9dbbe;
+/* Generated from Picture
 @bodyBlue: #485f8f;
 @darkBlueTitle: #004d8c;
 @lightBlueAccent: #07819e;
 @blueGreenAccent: #50989d;
 @contrastRed: #ff1654;
+*/
+
+/*MAterial design colors */
+@bodyBlue: #2196F3;
+@darkBlueTitle: #1976D2;
+@lightBlueAccent: #BBDEFB;
+@blueGreenAccent: #50989d;
+@contrastRed: #FF5252;
+@primaryText: #212121;
+@secondaryText: #727272;
+@lightText: #ffffff;
+@divider: #b6b6b6;
 
 
 h1,h2,h3,h4,h5 {
@@ -55,13 +67,14 @@ LANDING PAGE STYLES
 		text-align: center;
 		background-color: white;
 		border: 1px solid black;
+		padding: 0;
 	}
 
 	.top-section {
 		background-color: white;
 		background-image: url('/assets/images/homepage_landing_bg_2.jpg');
-		background-size: 100% 110%;
-		background-repeat: no-repeat;	
+		background-size: 110% 100%;
+		background-position: 50% 50%;
 
 		h1,h2 {
 			color: white;
@@ -116,16 +129,62 @@ LANDING PAGE STYLES
 		}
 	}
 
+	.portfolio-section {
+		height: auto;
+
+		.title-holder {
+			height: 250px;
+			background-color: @bodyBlue;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.section-title {
+				color: white;
+				font-size: 4em;
+				padding: 25px;
+				border: 5px solid white;
+				margin: auto;
+			}
+		}
+
+		img {
+			height: 286px;
+		}
+
+	}
+
 	.blog-section {
 		height: auto;
 		text-align: left;
 
+		.title-holder {
+			height: 250px;
+			background-color: @bodyBlue;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.section-title {
+				color: white;
+				font-size: 4em;
+				padding: 25px;
+				border: 5px solid white;
+				margin: auto;
+			}
+		}
+
+		/*
+		OLD SECTION TITLE STYLE
 		.section-title {
 			font-size: 1.5em;
 			margin: 20px 20px 20px 20px;
 			text-decoration: underline;
 			color: @darkBlueTitle;
 		}
+		*/
 
 		ul {
 			list-style: none;
@@ -135,26 +194,34 @@ LANDING PAGE STYLES
 			.blog-post {
 				border: 1px solid @darkBlueTitle;
 				text-align: left;
-				padding: 20px 50px;
+				//padding: 20px 50px;
+				margin: 20px 50px;
 
-				.post-title {
-					font-size: 2.5em;
-					color: blue;
-					color: @darkBlueTitle;
-				}
+				.content-header {
+					padding: 20px 50px;
+					background-color: @contrastRed;
+					color: white;
 
-				.post-date {
-					font-size: 1.5em;
-					padding-left: 100px;
-					color: @darkBlueTitle;
+					.post-title {
+						font-size: 2.5em;
+						//color: blue;
+						//color: @darkBlueTitle;
+					}
+
+					.post-date {
+						font-size: 1.5em;
+						padding-left: 100px;
+						//color: @darkBlueTitle;
+					}
 				}
 
 				.post-content {
+					padding: 20px 50px;
 					font-size: 1.0em;
 					display: inline;
 
 					p {
-						margin: 15px 0;
+						padding: 15px 50px;
 
 					}
 
@@ -171,9 +238,6 @@ LANDING PAGE STYLES
 			}
 
 		}
-	}
-
-	.portfolio-section {
 	}
 
 

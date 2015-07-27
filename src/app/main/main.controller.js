@@ -45,6 +45,13 @@
           });
         }
 
+       angular.element(document).ready(function () {
+          console.log('Hello World');
+          $('.parallax').parallax();
+});
+
+        
+
 /*
       angular.element(window).load(function() {
           $('#landing-page').fullpage(
@@ -88,6 +95,5 @@
             });
       });
 */
-     
 
 })();
