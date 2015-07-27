@@ -13,6 +13,24 @@ p {
 /*****
 GLOBAL STYLES
 *****/
+
+/**
+
+Color Palette
+Body beige from cloud: #e9dbbe
+dark blue from sky: 
+light blue from sky: 
+ 
+**/
+
+@bodyBeige: #e9dbbe;
+@bodyBlue: #485f8f;
+@darkBlueTitle: #004d8c;
+@lightBlueAccent: #07819e;
+@blueGreenAccent: #50989d;
+@contrastRed: #ff1654;
+
+
 h1,h2,h3,h4,h5 {
 	padding: 0;
 	margin: 0;
@@ -35,6 +53,8 @@ LANDING PAGE STYLES
 	.section {
 		height: 100vh;
 		text-align: center;
+		background-color: white;
+		border: 1px solid black;
 	}
 
 	.top-section {
@@ -52,6 +72,7 @@ LANDING PAGE STYLES
 		.title-text {
 			font-size: 5.5em;
 			margin: 50px;
+			padding-top: 10%;
 			//text-transform: uppercase;
 
 		}
@@ -79,11 +100,14 @@ LANDING PAGE STYLES
 
 	.process-section {
 		text-align: left;
+		background-color: white;
+		color: black;
 
 		.bio-title {
 			font-size: 1.5em;
 			margin: 20px 20px 20px 0;
 			text-decoration: underline;
+			color: @darkBlueTitle;
 		}
 		
 		.bio-list {
@@ -92,13 +116,66 @@ LANDING PAGE STYLES
 		}
 	}
 
-	.portfolio-section {
-		background-color: blue;
+	.blog-section {
+		height: auto;
+		text-align: left;
+
+		.section-title {
+			font-size: 1.5em;
+			margin: 20px 20px 20px 20px;
+			text-decoration: underline;
+			color: @darkBlueTitle;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+
+			.blog-post {
+				border: 1px solid @darkBlueTitle;
+				text-align: left;
+				padding: 20px 50px;
+
+				.post-title {
+					font-size: 2.5em;
+					color: blue;
+					color: @darkBlueTitle;
+				}
+
+				.post-date {
+					font-size: 1.5em;
+					padding-left: 100px;
+					color: @darkBlueTitle;
+				}
+
+				.post-content {
+					font-size: 1.0em;
+					display: inline;
+
+					p {
+						margin: 15px 0;
+
+					}
+
+				}
+
+				.post-content p:last-child {
+					display: inline;
+				}
+
+				.read-more-link {
+					font-size: 16px;
+					color: @contrastRed;
+				}
+			}
+
+		}
 	}
 
-	.blog-section {
-		background-color: red;
+	.portfolio-section {
 	}
+
 
 	.contact-section {
 		background-color: #4724d6;
@@ -149,6 +226,8 @@ LANDING PAGE STYLES
 				width: 75%;
 				display: block;
 				margin: inherit auto;
+				background-color: @darkBlueTitle;
+				border: 1px solid @darkBlueTitle;
 			}
 			
 		}

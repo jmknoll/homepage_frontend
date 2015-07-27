@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
       /** @ngInject */
-      function MainController($timeout, webDevTec, toastr, $window, $scope) {
+      function MainController($timeout, $window, $scope, $http) {
 
         $scope.hideSubtext = true;
         $scope.hideTwitter = true;
@@ -33,7 +33,17 @@
           alert('Thank you for getting in touch ' + contactInfo.name + '. I will be in touch shortly to discuss this project further. Please confirm that your information below is correct.'
             + JSON.stringify(contactInfo));
         }
-      }
+
+        $http.get('http://127.0.0.1:8888/site.json').
+          success( function (data, status){
+            console.log(status);
+            $scope.posts = data.projects.slice(0,3);
+          }).
+          error( function (data, status){
+            console.log('error');
+            console.log(status);
+          });
+        }
 
 /*
       angular.element(window).load(function() {

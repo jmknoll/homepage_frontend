@@ -27,9 +27,6 @@ ng-include(src="'app/components/navbar/navbar.html'")
 						li Provide and act on data-driven insights
 						li It is impossible to overestimate the value of good design
 
-	.section.blog-section
-		h1 sample content of blog section
-	
 	.section.portfolio-section
 		.slide
 			h1 sample content of portfolio slide 1
@@ -37,7 +34,16 @@ ng-include(src="'app/components/navbar/navbar.html'")
 			h1 sample content of portfolio slide 2
 		.slide
 			h1 sample content of portfolio slide 3
-	
+
+	.section.blog-section
+		h2.section-title FROM THE BLOG
+		ul(ng-repeat='post in posts')
+			.blog-post 
+				span.post-title {{ post.title }}
+				span.post-date {{ post.date.substr(0,10) }}
+				div.post-content(ng-bind-html='post.content.substr(0,500)')
+				span ... 
+				a.read-more-link Read More
 	.section.contact-section
 		.container
 			.row
