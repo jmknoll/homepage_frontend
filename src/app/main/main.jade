@@ -3,7 +3,7 @@ ng-include(src="'app/components/navbar/navbar.html'")
 .landing-page
 
 	.section.top-section
-		h1.title-text(ng-click='fadeInSubtext()') Jameson Knoll
+		h1.title-text(ng-hide='hideTitle', ng-click='fadeInSubtext()') Tony Stark
 		h2.subtitle-text(ng-hide='hideSubtext') Full Stack Web Design and Development
 		.social-icon-container
 			img.social-icon.social-icon-1(ng-hide='hideTwitter', src='assets/images/social_twitter.svg')
@@ -11,84 +11,133 @@ ng-include(src="'app/components/navbar/navbar.html'")
 			img.social-icon.social-icon-3(ng-hide='hideGithub', src='assets/images/social_github.svg')
 	.section.process-section
 		.container
-			.row
+			.row.intro-article
 				.col-lg-6.col-md-6.col-sm-12.col-xs-12
 					h2.bio-title BIO
-					ul.bio-list
-						li Web and mobile developer currently based in Shanghai, China. 
-						li Several years experience developing high performance scalable applications on web and mobile platforms.
-						li Currently doing web application development at Shanghai AppMaker.
-						li Willing to take on select projects. 
+					.bio-list
+						p Hey there. My name is Jameson Knoll. I'm a web and mobile developer from Pennsylvania currently working for a digital media agency in Shanghai, China. Thanks for stopping by my site.
+						p You'll find info about my software development process, a portfolio of some of my more recent work, and my blog on tech, startups, the scene in Shanghai/APAC, and cats. 
+						p Have an idea for a killer app? Or need a website for your business? I'm currently taking on select design and development projects, as well as providing technical consulting for startups and individual projects. Please use the form below to get in touch, or feel free to contact me via LinkedIn or Twitter. 
+
 				.col-lg-6.col-md-6.col-sm-12.col-xs-12
 					h2.bio-title ETHOS
-					ul.bio-list
-						li The value of a positive web presence increases every day
-						li An excellent web and mobile presence is one of the most powerful tools a business owner has.
-						li Provide and act on data-driven insights
-						li It is impossible to overestimate the value of good design
+					.bio-list.ethos-list
+						p Mobile first. Always.
+						p The is no substitute for good content. 
+						p Except perhaps an amazing user experience. 
+						p Technology should support the experience. Not the other way around.
+						p The value of a quality web and mobile presence continues to increase every day. 
+						p It is difficult to overestimate the value of good design. 
+						p Intuition is great, but data is better. 
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.our-process
+					h2 OUR PROCESS
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.process-title-section
+					.process-icon-holder
+						img.process-icon(src='assets/images/icon_lightbulb.png', ng-mouseenter='setProcess(0, $event)', ng-mouseleave='decolorizeIcon($event)') 
+						p.process-title Strategize
+					.process-icon-holder
+						img.process-icon(src='assets/images/icon_paintbrush.png', ng-mouseenter='setProcess(1, $event)', ng-mouseleave='decolorizeIcon($event)') 
+						p.process-title Design
+					.process-icon-holder
+						img.process-icon(src='assets/images/icon_code.png', ng-mouseenter='setProcess(2, $event)', ng-mouseleave='decolorizeIcon($event)') 
+						p.process-title Develop
+					.process-icon-holder
+						img.process-icon(src='assets/images/icon_gears.png', ng-mouseenter='setProcess(3, $event)', ng-mouseleave='decolorizeIcon($event)') 
+						p.process-title Maintain
+			.row
+				.col-lg-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					.process-keyword-row(ng-hide='showProcess != 0')
+						span.process-keyword  analysis 
+						img.process-icon.process-icon-first(src='assets/images/process_seperator_icon.png')
+						span.process-keyword  consumer 
+						img.process-icon.process-icon-first(src='assets/images/process_seperator_icon.png')
+						span.process-keyword  research 
+					.process-keyword-row(ng-hide='showProcess != 1')
+						span.process-keyword   u/x u/i  
+						img.process-icon.process-icon-second(src='assets/images/process_seperator_icon.png')
+						span.process-keyword interactive
+						img.process-icon.process-icon-second(src='assets/images/process_seperator_icon.png')
+						span.process-keyword  interface 
+					.process-keyword-row(ng-hide='showProcess != 2')
+						span.process-keyword   mobile  
+						img.process-icon.process-icon-third(src='assets/images/process_seperator_icon.png')
+						span.process-keyword   scale  
+						img.process-icon.process-icon-third(src='assets/images/process_seperator_icon.png')
+						span.process-keyword  responsive 
+					.process-keyword-row(ng-hide='showProcess != 3')
+						span.process-keyword performance
+						img.process-icon.process-icon-fourth(src='assets/images/process_seperator_icon.png')
+						span.process-keyword    seo   
+						img.process-icon.process-icon-fourth(src='assets/images/process_seperator_icon.png')
+						span.process-keyword  analytics 
+
+
 
 	.section.portfolio-section
 		.container-fluid
 			.row
 				.title-holder
 					span.section-title PORTFOLIO
-			.row
-				.col-lg-6.col-md-6.col-sm-12.col-xs-12
-					.card
-						.card-image.waves-effect.waves-block.waves-light
-							img.activator(src="/assets/images/madagascar.jpg")
-						.card-content
-							.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right more_vert
-							p
-								a(href="#") This is a link
-						.card-reveal
-							.card-title.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right close
-							p This is a web app that I built for Porsche dealership launch events throughout China.
-							p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
-				.col-lg-6.col-md-6.col-sm-12.col-xs-12
-					.card
-						.card-image.waves-effect.waves-block.waves-light
-							img.activator(src="/assets/images/grass_path.jpg")
-						.card-content
-							.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right more_vert
-							p
-								a(href="#") This is a link
-						.card-reveal
-							.card-title.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right close
-							p This is a web app that I built for Porsche dealership launch events throughout China.
-							p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front. 
-			.row
-				.col-lg-6.col-md-6.col-sm-12.col-xs-12
-					.card
-						.card-image.waves-effect.waves-block.waves-light
-							img.activator(src="/assets/images/monument_valley.jpg")
-						.card-content
-							.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right more_vert
-							p
-								a(href="#") This is a link
-						.card-reveal
-							.card-title.grey-text.text-darken-4 Porsche GTS China App
-								//i.material-icons.right close
-							p This is a web app that I built for Porsche dealership launch events throughout China.
-							p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
-				.col-lg-6.col-md-6.col-sm-12.col-xs-12
-					.card
-						.card-image.waves-effect.waves-block.waves-light
-							img.activator(src="/assets/images/highways.jpg")
-						.card-content
-							.card-title.activator.grey-text.text-darken-4 Porsche Enthusiast Stories
-								//i.material-icons.right more_vert
-							p
-								a(href="#") This is a link
-						.card-reveal
-							.card-title.grey-text.text-darken-4 Porsche Enthusiast Stories
-								//i.material-icons.right close
-							p Responsive Web and Mobile Site built primarily in AngularJS. Tells the true life stories of Porsche drivers who are shaping the future of China. 
+			.card-holder
+				.row
+					.col-lg-6.col-md-6.col-sm-12.col-xs-12
+						.card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="/assets/images/madagascar.jpg")
+							.card-content
+								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								.card-title.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right close
+								p This is a web app that I built for Porsche dealership launch events throughout China.
+								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
+					.col-lg-6.col-md-6.col-sm-12.col-xs-12
+						.card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="/assets/images/grass_path.jpg")
+							.card-content
+								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								.card-title.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right close
+								p This is a web app that I built for Porsche dealership launch events throughout China.
+								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front. 
+				.row
+					.col-lg-6.col-md-6.col-sm-12.col-xs-12
+						.card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="/assets/images/monument_valley.jpg")
+							.card-content
+								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								.card-title.grey-text.text-darken-4 Porsche GTS China App
+									//i.material-icons.right close
+								p This is a web app that I built for Porsche dealership launch events throughout China.
+								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
+					.col-lg-6.col-md-6.col-sm-12.col-xs-12
+						.card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="/assets/images/highways.jpg")
+							.card-content
+								.card-title.activator.grey-text.text-darken-4 Porsche Enthusiast Stories
+									//i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								.card-title.grey-text.text-darken-4 Porsche Enthusiast Stories
+									//i.material-icons.right close
+								p Responsive Web and Mobile Site built primarily in AngularJS. Tells the true life stories of Porsche drivers who are shaping the future of China. 
 
 	.section.blog-section
 		.container-fluid
@@ -100,9 +149,10 @@ ng-include(src="'app/components/navbar/navbar.html'")
 				.content-header
 					span.post-title {{ post.title }}
 					span.post-date {{ post.date.substr(0,10) }}
-				div.post-content(ng-bind-html='post.content.substr(0,500)')
-				span ... 
-				a.read-more-link Read More
+				.content-container
+					div.post-content(ng-bind-html='post.content.substr(0,500)') 
+					span.read-more-dots ... 
+					a.read-more-link Read More
 	.section.contact-section
 		.container
 			.row

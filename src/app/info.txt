@@ -1,0 +1,87 @@
+bio draft 1
+
+
+Web and mobile developer currently based in Shanghai, China.
+Several years experience developing high performance scalable applications on web and mobile platforms.
+
+Currently doing web application development at Shanghai AppMaker.
+Willing to take on select projects.
+
+
+bio draft 2
+
+
+Hey there. My name is Jameson Knoll. I'm a web and mobile developer from Pennsylvania currently working for a digital media agency in Shanghai, China. Thanks for stopping by my site.
+
+You'll find info about my software development process, a portfolio of some of my more recent work, and my blog on tech, startups, the scene in Shanghai/APAC, and cats. 
+
+Have an idea for a killer app? Or need a website for your business? I'm currently taking on select design and development projects, as well as providing technical consulting for startups and individual projects. Please use the form below to get in touch, or feel free to contact me via LinkedIn or Twitter. 
+
+
+
+
+ethos draft 1
+ 
+The value of a positive web presence increases every day
+An excellent web and mobile presence is one of the most powerful tools a business owner has.
+Provide and act on data-driven insights
+It is impossible to overestimate the value of good design
+
+ethos draft 2
+
+Mobile first. Always.
+The is no substitute for good content. 
+Except perhaps an amazing user experience. 
+Technology should support the experience. Not the other way around.
+The value of a quality web and mobile presence continues to increase every day. 
+It is difficult to overestimate the value of good design. 
+Intuition is great, but data is better. 
+
+
+our process draft 1
+
+1. strategize
+
+market research
+keyword analysis
+user focused
+
+2. design
+
+user experience
+user interface
+customer driven
+beautiful
+
+3. develop
+
+code
+scale
+responsive
+mobile
+
+4. optimize
+
+seo
+market position
+performance
+maintainance
+
+
+
+portfolio pieces 
+
+attainist - still needs a bit of work to set up auto mailer, and could use a bit of polishing, but otherwise finished
+
+https://attainist.herokuapp.com/
+
+gts
+qr code in popup menu
+
+pep
+show qr code and link to desktop version in popup
+
+autograder - still needs the content, and could use a bit of polish - perhaps this will be a good test subject for using materialize appropriately to look more modern. Its also a super easy app that you can use as an opportunity to look good
+
+
+
