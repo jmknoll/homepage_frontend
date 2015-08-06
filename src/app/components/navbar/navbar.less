@@ -2,7 +2,12 @@
 
 .navbar {
 	color: white;
-	background: @navBackground;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	//background: @navBackground;
+	background: transparent;
 	border-bottom: none;
 	//border-radius: 0;
 	height: 50px;
@@ -10,11 +15,24 @@
 	//position: fixed;
 	box-shadow: none;
 
+	.burger-icon {
+		cursor: pointer;
+	}
+
 	a {
 		color: white;
+		font-size: 16px !important;
+	}
+
+	a:link, a:visited, a:hover, a:focus, a:active {
+		text-decoration: none !important;
 	}
 
 	li.active {
 		background-color: @darkBlueTitle;
+	}
+
+	.navbar-right {
+		float: right;
 	}
 }

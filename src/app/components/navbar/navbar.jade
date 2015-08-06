@@ -1,13 +1,11 @@
-nav.navbar.navbar-fixed-top
+nav.navbar(ng-controller='HeaderCtrl')
 	.container-fluid
-		.navbar-header
-			//a.navbar-brand(href='#') JMKNOLL
-				<span class="glyphicon glyphicon-home"></span>
-			.collapse.navbar-collapse#bs-example-navbar-collapse-6
-				ul.nav.navbar-nav
-					li
-						a(ng-href="#") Home
-					li
-						a(ng-href="#") About
-					li
-						a(ng-href="#") Contact
+		.navbar-left
+			img.burger-icon(src='assets/images/menu_burger.png')
+		ul.navbar-right
+			li
+				a(ng-href="#") Home
+			li
+				a(ng-href="#") About
+			li
+				a(ng-href="#") Contact

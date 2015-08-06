@@ -49,23 +49,23 @@ ng-include(src="'app/components/navbar/navbar.html'")
 			.row
 				.col-lg-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					.process-keyword-row(ng-hide='showProcess != 0')
-						span.process-keyword  analysis 
+						span.process-keyword  analytics
 						img.process-icon.process-icon-first(src='assets/images/process_seperator_icon.png')
-						span.process-keyword  consumer 
+						span.process-keyword  tech 
 						img.process-icon.process-icon-first(src='assets/images/process_seperator_icon.png')
 						span.process-keyword  research 
 					.process-keyword-row(ng-hide='showProcess != 1')
-						span.process-keyword   u/x u/i  
+						span.process-keyword   interactive 
 						img.process-icon.process-icon-second(src='assets/images/process_seperator_icon.png')
-						span.process-keyword interactive
+						span.process-keyword 	u/x
 						img.process-icon.process-icon-second(src='assets/images/process_seperator_icon.png')
 						span.process-keyword  interface 
 					.process-keyword-row(ng-hide='showProcess != 2')
-						span.process-keyword   mobile  
+						span.process-keyword   responsive  
 						img.process-icon.process-icon-third(src='assets/images/process_seperator_icon.png')
 						span.process-keyword   scale  
 						img.process-icon.process-icon-third(src='assets/images/process_seperator_icon.png')
-						span.process-keyword  responsive 
+						span.process-keyword   mobile
 					.process-keyword-row(ng-hide='showProcess != 3')
 						span.process-keyword performance
 						img.process-icon.process-icon-fourth(src='assets/images/process_seperator_icon.png')
@@ -80,64 +80,64 @@ ng-include(src="'app/components/navbar/navbar.html'")
 			.row
 				.title-holder
 					span.section-title PORTFOLIO
-			.card-holder
+			
+			//.card-holder
 				.row
 					.col-lg-6.col-md-6.col-sm-12.col-xs-12
 						.card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="/assets/images/madagascar.jpg")
+								img.activator(src="/assets/images/portfolio_gts.jpg")
 							.card-content
 								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right more_vert
 								p
-									a(href="#") This is a link
 							.card-reveal
 								.card-title.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right close
-								p This is a web app that I built for Porsche dealership launch events throughout China.
-								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
+								p A web app which added a social aspect to Porsche GTS dealership events across China. Allowed dealerships to share photos and information about events with their customers through a custom application interface. Built with Angular, Node, and Express.
+								p This application is optimized for mobile, please scan the QR code below to begin. 
+								img(src='/assets/images/gts_qr.png')
 					.col-lg-6.col-md-6.col-sm-12.col-xs-12
 						.card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="/assets/images/grass_path.jpg")
+								img.activator(src="/assets/images/portfolio_pep.jpg")
 							.card-content
 								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right more_vert
 								p
-									a(href="#") This is a link
 							.card-reveal
 								.card-title.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right close
 								p This is a web app that I built for Porsche dealership launch events throughout China.
 								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front. 
 				.row
 					.col-lg-6.col-md-6.col-sm-12.col-xs-12
 						.card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="/assets/images/monument_valley.jpg")
+								img.activator(src="/assets/images/portfolio_attainist.jpg")
 							.card-content
 								.card-title.activator.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right more_vert
 								p
-									a(href="#") This is a link
 							.card-reveal
 								.card-title.grey-text.text-darken-4 Porsche GTS China App
-									//i.material-icons.right close
 								p This is a web app that I built for Porsche dealership launch events throughout China.
 								p Utilized a MEAN stack with SailsJS in the backend and AngularJS in the front.
 					.col-lg-6.col-md-6.col-sm-12.col-xs-12
 						.card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="/assets/images/highways.jpg")
+								img.activator(src="/assets/images/portfolio_autograder.jpg")
 							.card-content
 								.card-title.activator.grey-text.text-darken-4 Porsche Enthusiast Stories
-									//i.material-icons.right more_vert
 								p
-									a(href="#") This is a link
 							.card-reveal
 								.card-title.grey-text.text-darken-4 Porsche Enthusiast Stories
-									//i.material-icons.right close
 								p Responsive Web and Mobile Site built primarily in AngularJS. Tells the true life stories of Porsche drivers who are shaping the future of China. 
+
+			// alternate version of the portfolio section
+			.row.portoflio-row
+				.portfolio-item.portfolio-item-first
+					.title
+					.content
+				.portfolio-item.portfolio-item-second
+			.row.portfolio-row
+				.portfolio-item.portfolio-item-third
+				.portfolio-item.portfolio.item-fourth
 
 	.section.blog-section
 		.container-fluid

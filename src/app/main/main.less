@@ -75,7 +75,7 @@ light blue from sky:
 @contactSectionBackgroundImage: url('/assets/images/landing_contact_bg.jpg');
 
 nav {
-	display: none;
+	//display: none;
 }
 
 h1,h2,h3,h4,h5 {
@@ -100,7 +100,7 @@ LANDING PAGE STYLES
 		min-height: 100vh;
 		text-align: center;
 		background-color: white;
-		border: 1px solid black;
+		border-bottom: 2px solid black;
 		padding: 0;
 	}
 
@@ -120,8 +120,8 @@ LANDING PAGE STYLES
 
 		.title-text {
 			font-size: 5.5em;
-			margin: 35px;
-			padding-top: 10%;
+			margin-bottom: 35px;
+			padding-top: 13%;
 
 		}
 
@@ -272,6 +272,7 @@ LANDING PAGE STYLES
 	.portfolio-section {
 		height: auto;
 		text-align: center; 
+		//background-color: transparent;
 
 		.title-holder {
 			height: 250px;
@@ -280,9 +281,8 @@ LANDING PAGE STYLES
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-
+			border-bottom: 2px solid black;
 			background-image: @portfolioSectionBackgroundImage;
-			//background-size: cover;
 			background-position: center center;
 			background-attachment: fixed;
 			background-size: 100% auto;
@@ -305,13 +305,20 @@ LANDING PAGE STYLES
 
 
 			.card {
-				max-width: 450px;
+				max-width: 600px;
 				display: block;
 				margin: 100px auto 0 auto;
+				box-shadow: none;
+				border: 2px solid black;
+
+				p {
+					text-align: left;
+					margin: 20px;
+				}
 			}
 
 			img {
-				height: 286px;
+				height: auto;
 			}
 		}
 	}
@@ -332,6 +339,7 @@ LANDING PAGE STYLES
 			background-size: 100% auto;
 			perspective: 1000;
 			background-image: @blogSectionBackgroundImage;
+			border-bottom: 2px solid black;
 
 			.section-title {
 				color: @lightText;
@@ -406,6 +414,7 @@ LANDING PAGE STYLES
 		background-color: #4724d6;
 		background-image: @contactSectionBackgroundImage;
 		background-size: 100% 100%;
+		border-top: 1px solid black;
 
 		.contact-header-container {
 			margin-top: 30%;
